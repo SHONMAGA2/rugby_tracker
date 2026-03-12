@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby Tracker - Player Profile</title>
+    
+    <link rel="stylesheet" href="../static/player_profile.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Player Profile</h1>
+    
+    <nav>
+      <ul>
+      <li><a href="">Dashboard</a></li>
+      <li><a href="">Add Session</a></li>
+    </ul>
+    </nav>
+    
+  </header>
+  
+  <main>
+    <section class="form-submission">
+    <form action="/add_player_profile" method="post">
+      
+      <label for="name">Player Name</label>
+      <input type="text" placeholder="Players Name" required name="name">
+      
+      <label for="age">Player Age</label>
+      <input type="number" required name="age" min="5" max="60" placeholder="Player Age">
+      
+      <label for="team" id="team">Team</label>
+      <select name="team" required>
+        <option value="">Select Team</option>
+        <option value="O14">O/14</option>
+        <option value="O15">O/15</option>
+        <option value="O16">O/16</option>
+        <option value="2nd-Team">2nd Team</option>
+        <option value="1st-Team">1st Team</option>
+      </select>
+      
+      <label for="date" id="date">Date Joined</label>
+      <input type="date" placeholder="date joined" required name="date" id="date-input">
+      
+      <button type="submit">Submit</button>
+    </form>
+    </section>
+  </main>
+  
+  <footer class="closing-body">
+    <p> &copy; Burgundary <span id="date"></span> 2026. All rights reserved. </p>
+  </footer>
+</body>
+
+</html>

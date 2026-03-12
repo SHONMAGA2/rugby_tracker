@@ -1,0 +1,117 @@
+header nav ul{
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+body{
+  font-family: Alice, Helvetica, serif;
+  font-size: 16px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+a{
+  line-height: 1rem;
+  font-size: 16px;
+}
+
+form{
+  display: flex;
+  background-color: red;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  outline: none;
+  border: 2px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: #800200;
+}
+
+input::placeholder {
+  font: italic;
+  color: #999;
+  text-align: center;
+}
+
+option {
+  text-align: center;
+}
+
+select {
+  cursor: pointer;
+  background-color: white;
+}
+
+input[type="date"]{
+  text-align: center;
+}
+
+input[type="date"]::-webkit-datetime-edit{
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 20px;
+  width: 20%;
+  text-align: center;
+  margin-left: 24rem;
+}
+
+header {
+  background-color: #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0.15);
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+header nav {
+  display: flex;
+  text-align: center;
+  padding: 5px;
+}
+
+header h1 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+header a{
+  color: black;
+  text-decoration: none;
+  border: 2px solid #999;
+  padding: 5px;
+  background-color: white;
+  outline: none;
+  border-radius: 10px;
+}
+
+header a:hover{
+  background-color: #ccc;
+}
+
+form input {
+  background-color: white;
+  color: black;
+}
+
+form label {
+  color: white;
+}
